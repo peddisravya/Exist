@@ -1,0 +1,22 @@
+﻿<div class="col-md-12 col-md-offset-1">
+     <div class="col-sm-4 text-center">
+  </div>
+    <h5>Welcome {{currentUser.firstName}}!</h5>
+    <p>You're logged in!!</p>
+    <h3>All registered users:</h3>
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.username}} ({{user.firstName}} {{user.lastName}})
+            - <a (click)="deleteUser(user.id)">Delete</a>
+        </li>
+    </ul>
+    <!--<a [routerLink]="['/login']"><span class="glyphicon glyphicon-log-out"></span> Logout</a>-->
+</div>
+<br>
+<footer class="container text-center">
+
+</footer>
+<div class="text-center">
+    
+      <a [routerLink]="['/login']"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+</div>

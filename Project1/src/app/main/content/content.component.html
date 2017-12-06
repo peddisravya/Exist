@@ -1,0 +1,18 @@
+<div class="container-fluid text-center" >
+  <div class="row content">
+    <nav>
+    </nav>
+    <div class="col-sm-2 sidenav">
+      <ul class="nav nav-pills nav-stacked">
+        <li routerLinkActive="active" [routerLinkActiveOptions]='{exact:true}'>
+          <a routerLink=""><i class="fa fa-fw fa-dashboard"></i>Home</a></li>
+        <li routerLinkActive="active" ><a routerLink="/about">About Us</a></li>
+        <li routerLinkActive="active" ><a routerLink="/contactus">Contact us</a></li>
+      </ul>    
+    </div>
+    <div class="col-sm-10 text-left">
+      <alert></alert>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

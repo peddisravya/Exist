@@ -1,0 +1,23 @@
+<br>
+<br>
+<h1>Teachers details</h1>
+<table>
+<tr>
+<th>Name</th>
+<th>College</th>
+<th>Age</th>
+<th>Subject</th>
+<th>Date</th>
+</tr>
+<tr *ngFor="let teac of teacher; let i=index">
+<td>{{teac.name|uppercase}}</td>
+<td>{{teac.college|lowercase}}</td>
+<td>{{teac.age}}</td>
+<td>{{teac.subject|slice:1:3}}</td>
+<td>{{teac.date|date:'dd/MM/y'}}</td>
+</tr>
+</table>
+
+
+
+

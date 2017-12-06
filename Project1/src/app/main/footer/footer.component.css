@@ -1,0 +1,9 @@
+ /* Set black background color, white text and some padding */
+    footer {
+      background-color: #62bcdc; 
+      height:50px;
+      padding-top: 15px;
+    }
+    .footerTextAlign {
+        text-align: center;
+    }

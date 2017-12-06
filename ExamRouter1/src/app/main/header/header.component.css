@@ -1,0 +1,10 @@
+/* Set black background color, white text and some padding */
+header {
+    background-color: #62bcdc; 
+    color: white;
+    padding: 15px;
+}
+.logo {
+    height: 60px;
+    width: 300px;
+}
